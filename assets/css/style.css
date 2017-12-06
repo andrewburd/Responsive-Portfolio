@@ -17,8 +17,6 @@ h1{
     width: 230px;
     display: flex;
     align-items: center;
-
-
 }
 
 h2{
@@ -29,8 +27,11 @@ h2{
 
 h6{
     font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-left: 20px;
     color: #4aaaa5;
-    padding-left: 35px;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .container{
@@ -100,6 +101,7 @@ header nav{
     background-color: #ffffff;
     padding-bottom: 20px;
     padding-top: 20px;
+    overflow-wrap: auto;
 }
 
 footer{
@@ -133,24 +135,22 @@ img{
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding-left: 20px;
     color: #4aaaa5;
-    text-align: center;
 }
 
-hr{
-    margin: 0px;
-    width: 200px;
-    margin-left: 20px;
-}
 #folio{
     height: 300px;
     width: 300px;
+    overflow: auto;
 }
 
 #portfolio{
+    margin: 10px;
     float: left;
     width: 650px;
-    height:650px;
-    border: 20px;
+    height: 650px;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #contact{
@@ -174,14 +174,18 @@ hr{
 @media screen and (max-width: 980px) {
     #sidebar {width: 270px; float: left;}
     #showcase {width:420px;}
+    #portfolio {width:420px;}
 }       
 
 @media screen and (max-width: 768px) {
     #sidebar {width: 270px; float: left;}
     h1 {width: 120px; font-size: 14px;}
+    #portfolio {height: auto}
 }       
 
 @media screen and (max-width: 640px) {
     header {position: static;}
     #branding {width: 100%}
+    #portfolio {height: auto}
+    #showcase {height: auto}
 }       
